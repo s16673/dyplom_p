@@ -18,9 +18,9 @@ public class RandomCubeGenerator : MonoBehaviour
 
     public void SpawnGrid()
     {
-        for (int x=0; x<gridX; x++)
+        for (int x = 0; x < gridX; x++)
         {
-            for (int z=0; z<gridZ; z++)
+            for (int z = 0; z < gridZ; z++)
             {
                 Vector3 spawnPosition = new Vector3(x * gridSpacingOffset, 0, z * gridSpacingOffset) + gridOrigin;
                 PickAndSpawn(spawnPosition, Quaternion.identity);
@@ -33,9 +33,5 @@ public class RandomCubeGenerator : MonoBehaviour
         int randomIndex = Random.Range(0, itemsToPickFrom.Length);
         GameObject clone = Instantiate(itemsToPickFrom[randomIndex], positionToSpawn, rotationToSpawn);
         clone.transform.parent = GameObject.Find("kontrolerMapy").transform;
-
-
     }
-  
 }
-

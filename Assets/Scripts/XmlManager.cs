@@ -8,12 +8,12 @@ using System.IO;
 public class XmlManager : MonoBehaviour
 {
     public static XmlManager ins;
-    //public RandomCubeGenerator RandomGenerator;
+    
 
     void Awake()
     {
         ins = this;
-       // RandomGenerator.SpawnOnClick();
+       
     }
 
     // list of items
@@ -37,11 +37,13 @@ public class XmlManager : MonoBehaviour
         stream.Close();
     }
 }
+
 [System.Serializable]
 public class ItemEntry
 {
-    //items to choose from attributes
+    //tu powinien się znaleźć clone z RandomCubeGenerator?
     //public string, material, int, float itd
+    
 }
 
 [System.Serializable]
@@ -51,4 +53,4 @@ public class ItemDatabase
     public List<ItemEntry> list = new List<ItemEntry>();
 }
 
-// public enum jakistam {Jeden, drugi, trzeci}, może się przydać
+// public enum Cokolwiek {Jeden, drugi, trzeci}; może się przydać
