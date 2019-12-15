@@ -63,6 +63,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Book-Page Curl\scripts\AutoFlip.cs" />
+    <Compile Include="Assets\Book-Page Curl\scripts\Book.cs" />
     <Compile Include="Assets\ExtendedButtons\Assets\Scripts\Buttons\Button2D.cs" />
     <Compile Include="Assets\ExtendedButtons\Assets\Scripts\Buttons\Button3D.cs" />
     <Compile Include="Assets\ExtendedButtons\Assets\Scripts\Listeners\ButtonsListener.cs" />
@@ -73,9 +75,16 @@
     <Compile Include="Assets\ExtendedButtons\Demo\Scripts\Button3DExampleUsage.cs" />
     <Compile Include="Assets\ExtendedButtons\Demo\Scripts\ChangeMaterial.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
-    <Compile Include="Assets\Scripts\CameraMovement.cs" />
-    <Compile Include="Assets\Scripts\centerCamera.cs" />
+    <Compile Include="Assets\Scripts\CenterCamera.cs" />
+    <Compile Include="Assets\Scripts\CenterCameraKsiazka.cs" />
+    <Compile Include="Assets\Scripts\CenterCameraMapa.cs" />
+    <Compile Include="Assets\Scripts\CenterKameraSegregatory.cs" />
+    <Compile Include="Assets\Scripts\MapaKontrolerObrotu.cs" />
+    <Compile Include="Assets\Scripts\OkienkoKomp.cs" />
+    <Compile Include="Assets\Scripts\RandomCubeGenerator.cs" />
+    <Compile Include="Assets\Scripts\SceneMenager.cs" />
     <Compile Include="Assets\Scripts\SelectionManager.cs" />
+    <Compile Include="Assets\Scripts\XmlManager.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>E:/Obrazy/PJATK/III rok/Dyplom/dyplom002/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>

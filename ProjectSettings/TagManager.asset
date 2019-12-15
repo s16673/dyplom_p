@@ -8,6 +8,8 @@ TagManager:
   - SelectableKomp
   - SelectableSegregatory
   - SelectableKamera
+  - SelectableMapa
+  - SelectableKsiazka
   layers:
   - Default
   - TransparentFX

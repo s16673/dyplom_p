@@ -4,30 +4,35 @@ using UnityEngine;
 
 public class CenterCamera : MonoBehaviour
 {
-    private int clickCounter = 0;
+    private int clickCounter;
     private bool clicked;
     public float moveSpeed = 0.5f;
-    public Transform Player = null; // create an empty gameobject and assign in inspector
+    public Transform player;
+	private Vector3 previousPosition;
 
-    private Vector3 kamera;
+	private void Start() {
+		clickCounter = 0;
+		clicked = false;
+	}
 
+	void OnMouseDown() {
+		if (clicked == false) {
+			float posX = 1f;
+			float posY = 3f;
+			float posZ = 0.2f;
 
-
-
-    void OnMouseDown()
-    {
-        float posX = 1f;
-        float posY = 3f;
-        float posZ = 0.2f;
-
-        if (GetComponent<Collider>())
-        {
-            Player.transform.position = new Vector3(posX, posY, posZ);
-        }
-      
-        Debug.Log("you clicked");
-       
-
+			if (GetComponent<Collider>()) {
+				previousPosition = player.transform.position;
+				player.transform.position = new Vector3(posX, posY, posZ);
+				clicked = true;
+			}
+		} else {
+			float posX = previousPosition.x;
+			float posY = previousPosition.y;
+			float posZ = previousPosition.z;
+			player.transform.position = new Vector3(posX, posY, posZ);
+			clicked = false; //odkomentować jeżeli chcemy wiele razy przybliżać i oddalać ;)
+		}
     }
    
 

@@ -6,9 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/menu_glowne_002.unity
-    guid: 7f5fa4972a248ca44ab665a2fccc3cf9
+    path: Assets/Scenes/MenuGlowne.unity
+    guid: 3bff9154b50ddaa428eb880262c4e218
   - enabled: 1
-    path: Assets/Scenes/mapa.unity
-    guid: 575fb398da8a0e44e8e8560c383a32ea
+    path: Assets/Scenes/MapaSwiata.unity
+    guid: 89f9a5d0e5d453649847dab4a86f1181
   m_configObjects: {}

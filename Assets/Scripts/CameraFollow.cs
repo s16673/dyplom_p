@@ -4,7 +4,9 @@ using System.Collections;
 
 public class CameraFollow : MonoBehaviour {
 
-    public float shift;
+    public float shiftX;
+    public float shiftY;
+    public float shiftZ;
 
 	private Vector3 velocity;
 
@@ -28,9 +30,9 @@ public class CameraFollow : MonoBehaviour {
 	void FixedUpdate () 
 	{
 		//Camera foloows the player
-		float posX = Mathf.SmoothDamp (transform.position.x, player.transform.position.x+shift, ref velocity.x, smoothTimeX);
-		float posY = Mathf.SmoothDamp (transform.position.y, player.transform.position.y+shift, ref velocity.y, smoothTimeY);
-        float posZ = Mathf.SmoothDamp(transform.position.z, player.transform.position.z+shift, ref velocity.z, smoothTimeZ);
+		float posX = Mathf.SmoothDamp (transform.position.x, player.transform.position.x+shiftX, ref velocity.x, smoothTimeX);
+		float posY = Mathf.SmoothDamp (transform.position.y, player.transform.position.y+shiftY, ref velocity.y, smoothTimeY);
+        float posZ = Mathf.SmoothDamp(transform.position.z, player.transform.position.z+shiftZ, ref velocity.z, smoothTimeZ);
 
 		transform.position = new Vector3 (posX, posY, posZ);
 
