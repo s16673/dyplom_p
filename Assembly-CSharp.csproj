@@ -76,15 +76,25 @@
     <Compile Include="Assets\ExtendedButtons\Demo\Scripts\ChangeMaterial.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\CenterCamera.cs" />
+    <Compile Include="Assets\Scripts\CenterCameraKalkulator.cs" />
     <Compile Include="Assets\Scripts\CenterCameraKsiazka.cs" />
     <Compile Include="Assets\Scripts\CenterCameraMapa.cs" />
+    <Compile Include="Assets\Scripts\CenterCameraRamka.cs" />
+    <Compile Include="Assets\Scripts\CenterCameraSzuflada.cs" />
     <Compile Include="Assets\Scripts\CenterKameraSegregatory.cs" />
+    <Compile Include="Assets\Scripts\CubeContainer.cs" />
+    <Compile Include="Assets\Scripts\DiceRoller.cs" />
+    <Compile Include="Assets\Scripts\GeneratedMap.cs" />
+    <Compile Include="Assets\Scripts\Hero.cs" />
     <Compile Include="Assets\Scripts\MapaKontrolerObrotu.cs" />
+    <Compile Include="Assets\Scripts\OkienkoKalkulator.cs" />
     <Compile Include="Assets\Scripts\OkienkoKomp.cs" />
+    <Compile Include="Assets\Scripts\OkienkoKsiazka.cs" />
+    <Compile Include="Assets\Scripts\OkienkoSegregatory.cs" />
+    <Compile Include="Assets\Scripts\OkienkoSzuflada.cs" />
     <Compile Include="Assets\Scripts\RandomCubeGenerator.cs" />
     <Compile Include="Assets\Scripts\SceneMenager.cs" />
     <Compile Include="Assets\Scripts\SelectionManager.cs" />
-    <Compile Include="Assets\Scripts\XmlManager.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>E:/Obrazy/PJATK/III rok/Dyplom/dyplom002/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>

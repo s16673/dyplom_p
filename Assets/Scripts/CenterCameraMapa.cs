@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class CenterCameraMapa : MonoBehaviour
 {
@@ -18,6 +19,7 @@ public class CenterCameraMapa : MonoBehaviour
 
     void OnMouseDown()
     {
+        
         if (clicked == false)
         {
             float posX = -0.3f;

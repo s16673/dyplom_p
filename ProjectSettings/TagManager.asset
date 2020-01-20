@@ -10,6 +10,9 @@ TagManager:
   - SelectableKamera
   - SelectableMapa
   - SelectableKsiazka
+  - SelectableKalkulator
+  - SelectableSzuflada
+  - SelectableRamka
   layers:
   - Default
   - TransparentFX
@@ -20,7 +23,7 @@ TagManager:
   - 
   - 
   - PostProcessing
-  - 
+  - Darken
   - 
   - 
   - 
@@ -46,4 +49,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: darken
+    uniqueID: 3686196803
     locked: 0

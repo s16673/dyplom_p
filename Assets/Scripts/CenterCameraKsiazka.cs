@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class CenterCameraKsiazka : MonoBehaviour
 {
@@ -15,13 +16,19 @@ public class CenterCameraKsiazka : MonoBehaviour
         clickCounter = 0;
         clicked = false;
     }
+    private void Update()
+    {
+        if (EventSystem.current.IsPointerOverGameObject())
+
+            return;
+    }
 
     void OnMouseDown()
     {
         if (clicked == false)
         {
-            float posX = 0.13f;
-            float posY = 2.31f;
+            float posX = 0.74f;
+            float posY = 2.57f;
             float posZ = -1.22f;
 
             if (GetComponent<Collider>())
@@ -41,5 +48,6 @@ public class CenterCameraKsiazka : MonoBehaviour
         }
     }
 
+    
 
 }

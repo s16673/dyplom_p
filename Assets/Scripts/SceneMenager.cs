@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class SceneMenager : MonoBehaviour
 {
@@ -17,8 +18,11 @@ public class SceneMenager : MonoBehaviour
 
     private void OnMouseDown()
     {
+        if (EventSystem.current.IsPointerOverGameObject())
 
-        
+            return;
+
+
         if (clicked == false)
         {
             Debug.Log("Pressed left click.");

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class SelectionManager : MonoBehaviour
 {
@@ -8,19 +9,31 @@ public class SelectionManager : MonoBehaviour
     [SerializeField] private string SelectableTag2 = "SelectableSegregatory";
     [SerializeField] private string SelectableTag3 = "SelectableMapa";
     [SerializeField] private string SelectableTag4 = "SelectableKsiazka";
+    [SerializeField] private string SelectableTag5 = "SelectableKalkulator";
+    [SerializeField] private string SelectableTag6 = "SelectableSzuflada";
+    [SerializeField] private string SelectableTag7 = "SelectableRamka";
     [SerializeField] private Material active;
     [SerializeField] private Material defaultMaterial;
     [SerializeField] private Material defaultMaterial2;
     [SerializeField] private Material defaultMaterial3;
     [SerializeField] private Material defaultMaterial4;
+    [SerializeField] private Material defaultMaterial5;
+    [SerializeField] private Material defaultMaterial6;
+    [SerializeField] private Material defaultMaterial7;
 
     private Transform _selection;
     private Transform _selection2;
     private Transform _selection3;
     private Transform _selection4;
+    private Transform _selection5;
+    private Transform _selection6;
+    private Transform _selection7;
 
     private void Update()
     {
+        if (EventSystem.current.IsPointerOverGameObject())
+           return;
+
         if (_selection != null)
         {
             var selectionRenderer = _selection.GetComponent<Renderer>();
@@ -87,12 +100,63 @@ public class SelectionManager : MonoBehaviour
             var selection4 = hit.transform;
             if (selection4.CompareTag(SelectableTag4))
             {
-                var selectionRenderer = selection3.GetComponent<Renderer>();
+                var selectionRenderer = selection4.GetComponent<Renderer>();
                 if (selection4.CompareTag(SelectableTag4))
                 {
                     selectionRenderer.material = active;
                 }
                 _selection4 = selection4;
+            }
+            //podswietlenie kalkulatora
+            if (_selection5 != null)
+            {
+                var selectionRenderer = _selection5.GetComponent<Renderer>();
+                selectionRenderer.material = defaultMaterial5;
+                _selection5 = null;
+            }
+            var selection5 = hit.transform;
+            if (selection5.CompareTag(SelectableTag5))
+            {
+                var selectionRenderer = selection5.GetComponent<Renderer>();
+                if (selection5.CompareTag(SelectableTag5))
+                {
+                    selectionRenderer.material = active;
+                }
+                _selection5 = selection5;
+            }
+            //podswietlenie szuflady
+            if (_selection6 != null)
+            {
+                var selectionRenderer = _selection6.GetComponent<Renderer>();
+                selectionRenderer.material = defaultMaterial6;
+                _selection6 = null;
+            }
+            var selection6 = hit.transform;
+            if (selection6.CompareTag(SelectableTag6))
+            {
+                var selectionRenderer = selection6.GetComponent<Renderer>();
+                if (selection6.CompareTag(SelectableTag6))
+                {
+                    selectionRenderer.material = active;
+                }
+                _selection6 = selection6;
+            }
+            //podswietlenie ramki
+            if (_selection7 != null)
+            {
+                var selectionRenderer = _selection7.GetComponent<Renderer>();
+                selectionRenderer.material = defaultMaterial7;
+                _selection7 = null;
+            }
+            var selection7 = hit.transform;
+            if (selection7.CompareTag(SelectableTag7))
+            {
+                var selectionRenderer = selection7.GetComponent<Renderer>();
+                if (selection7.CompareTag(SelectableTag7))
+                {
+                    selectionRenderer.material = active;
+                }
+                _selection7 = selection7;
             }
         }
     }

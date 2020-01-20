@@ -37,10 +37,7 @@ public class OkienkoKomp : MonoBehaviour
 
     public void Update()
     {
-        //if (Input.GetMouseButtonDown(1))
-        //{
-        //    abc.SetActive(false);
-        //}
+      
 
     }
 

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class CenterKameraSegregatory : MonoBehaviour
 {
@@ -14,6 +15,13 @@ public class CenterKameraSegregatory : MonoBehaviour
     {
         clickCounter = 0;
         clicked = false;
+    }
+
+    public void Update()
+    {
+        if (EventSystem.current.IsPointerOverGameObject())
+
+            return;
     }
 
     void OnMouseDown()

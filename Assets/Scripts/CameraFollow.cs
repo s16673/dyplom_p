@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.EventSystems;
 
 
 public class CameraFollow : MonoBehaviour {
@@ -59,7 +60,12 @@ public class CameraFollow : MonoBehaviour {
 		maxCameraPos = gameObject.transform.position;
 	}
 
+    private void Update()
+    {
+        if (EventSystem.current.IsPointerOverGameObject())
 
+            return;
+    }
 
 
 }
