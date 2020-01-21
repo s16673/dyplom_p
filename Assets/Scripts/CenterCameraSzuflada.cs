@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class CenterCameraSzuflada : MonoBehaviour
+public class CenterCameraSzuflada : MonoBehaviour, IPointerClickHandler
 {
     private int clickCounter;
     private bool clicked;
@@ -17,14 +17,15 @@ public class CenterCameraSzuflada : MonoBehaviour
         clicked = false;
     }
 
-    private void Update()
+    public void OnPointerClick(PointerEventData eventData)
     {
-        if (EventSystem.current.IsPointerOverGameObject())
+        //mozna sprawdzic który przycisk ponizej czy pracy czy lewy przycisk myszki
+        //if( eventData.button == PointerEventData.InputButton.Left );
+        OnMouseDownAction();
 
-            return;
     }
 
-    void OnMouseDown()
+    void OnMouseDownAction()
     {
         if (clicked == false)
         {

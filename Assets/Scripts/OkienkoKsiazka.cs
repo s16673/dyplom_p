@@ -9,22 +9,16 @@ public class OkienkoKsiazka : MonoBehaviour
     private bool clicked;
     public GameObject abc;//Its your button
                           // Use this for initialization
-   // public GameObject def;
+                          // public GameObject def;
+
     void Start()
     {
         clickCounter = 0;
         clicked = false;
     }
-    public void Update()
-    {
-        if (EventSystem.current.IsPointerOverGameObject())
-
-            return;
-
-    }
 
 
-    private void OnMouseDown()
+    public void OnMouseDownAction(PointerEventData eventData)
     {
 
         //if (Input.GetMouseButtonDown(0))
@@ -44,8 +38,5 @@ public class OkienkoKsiazka : MonoBehaviour
         }
 
     }
-
-   
-
 
 }
