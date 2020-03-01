@@ -1,7 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-//using System.Xml;
-//using System.Xml.Serialization;
+using System.Xml;
+using System.Xml.Serialization;
+using System.IO;
 using UnityEngine;
 
 
@@ -13,10 +14,9 @@ public class RandomCubeGenerator : MonoBehaviour
     public int gridZ;
     public float gridSpacingOffset = 1f;
     public Vector3 gridOrigin = Vector3.zero;
-    public GameObject[] clonesPosition;
-    //public Vector3[] clonePositions;
-    //public GameObject[] clonesRotation;
-    //public GameObject[] clonesName;
+    [XmlArray("mapa"), XmlArrayItem("klocek")]
+    public GameObject[,] tab = new GameObject[10, 10];
+    
 
     public void SpawnOnClick()
     {
@@ -30,24 +30,20 @@ public class RandomCubeGenerator : MonoBehaviour
             for (int z = 0; z < gridZ; z++)
             {
                 Vector3 spawnPosition = new Vector3(x * gridSpacingOffset, 0, z * gridSpacingOffset) + gridOrigin;
-                PickAndSpawn(spawnPosition, Quaternion.identity);
+                tab [x,z] = PickAndSpawn(spawnPosition, Quaternion.identity);
             }
         }
     }
 
-    public void PickAndSpawn(Vector3 positionToSpawn, Quaternion rotationToSpawn)
+    public GameObject PickAndSpawn(Vector3 positionToSpawn, Quaternion rotationToSpawn)
     {
         int randomIndex = Random.Range(0, itemsToPickFrom.Length);
         GameObject clone = Instantiate(itemsToPickFrom[randomIndex], positionToSpawn, rotationToSpawn);
         clone.transform.parent = GameObject.Find("kontrolerMapy").transform;
-        //clonePositions = new Vector3[3];
-        //Vector3 position = clone.transform.position;
-        //clonePositions[0] = position;
-        //int clonePositionIndex = Vector3Int;
-        // clonesPosition[int clone.GetComponent<Vector3Int>];
-        // clonesRotation[int clone.GetComponent<Quaternion>];
-        // clonesName[clone.name];
+        return clone;
+        
 
     }
 }
+
 

@@ -115,7 +115,7 @@ MonoBehaviour:
   m_MinSize: {x: 713, y: 398}
   m_MaxSize: {x: 18008, y: 14048}
   vertical: 0
-  controlID: 3025
+  controlID: 3010
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -166,7 +166,7 @@ MonoBehaviour:
   m_MinSize: {x: 234, y: 398}
   m_MaxSize: {x: 10004, y: 14048}
   vertical: 1
-  controlID: 2974
+  controlID: 2944
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -357,9 +357,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: a8f2ffff
+      m_SelectedIDs: b42a0000
+      m_LastClickedID: 10932
+      m_ExpandedIDs: b8fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -414,9 +414,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -14.521618, y: -3.4328575, z: 0.08314101}
+    m_Target: {x: -13.397308, y: -3.6044521, z: -1.578263}
     speed: 2
-    m_Value: {x: -14.521618, y: -3.4328575, z: 0.08314101}
+    m_Value: {x: -13.397308, y: -3.6044521, z: -1.578263}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -444,13 +444,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.13609484, y: 0.69328713, z: -0.13585077, w: -0.6945328}
+    m_Target: {x: -0.15677813, y: 0.7201821, z: -0.17280944, w: -0.6533722}
     speed: 2
-    m_Value: {x: -0.13609484, y: 0.69328713, z: -0.13585077, w: -0.6945328}
+    m_Value: {x: -0.15677813, y: 0.7201821, z: -0.17280944, w: -0.6533722}
   m_Size:
-    m_Target: 22.569702
+    m_Target: 17.472273
     speed: 2
-    m_Value: 22.569702
+    m_Value: 17.472273
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -526,20 +526,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/MarcinFIX
+    - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/MarcinFIX
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: E:\Obrazy\PJATK\III rok\Dyplom\dyplom_p
+  m_LastProjectPath: E:\Obrazy\PJATK\III rok\Dyplom\dyplom002
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 98}
-    m_SelectedIDs: 622b0000
-    m_LastClickedID: 11106
-    m_ExpandedIDs: 000000006c2a0000c42a0000262c00008e2c0000ae2c000000ca9a3b
+    scrollPos: {x: 0, y: 146}
+    m_SelectedIDs: c0290000
+    m_LastClickedID: 10688
+    m_ExpandedIDs: 00000000de26000044270000122900008c290000b029000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -567,7 +567,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000006c2a0000c42a0000262c00008e2c0000ae2c000000ca9a3b
+    m_ExpandedIDs: 00000000de26000044270000122900008c290000b029000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -594,7 +594,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: 00000000180b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0

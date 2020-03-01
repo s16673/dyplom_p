@@ -31,10 +31,8 @@ public class SelectionManager : MonoBehaviour
 
     private void Update()
     {
-        if (EventSystem.current.IsPointerOverGameObject()) {
-            return;
-
-        }
+        if (EventSystem.current.IsPointerOverGameObject())
+           return;
 
         if (_selection != null)
         {
@@ -47,7 +45,6 @@ public class SelectionManager : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit))
         {
-            Debug.Log("Hit " + hit.collider.gameObject.name);
             var selection = hit.transform;
             if (selection.CompareTag(SelectableTag1))
             {

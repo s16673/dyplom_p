@@ -7,20 +7,18 @@ using UnityEngine.EventSystems;
 
 public class SceneMenager : MonoBehaviour
 {
-    private int clickCounter;
     private bool clicked;
    
     void Start()
     {
-        clickCounter = 0;
         clicked = false;
     }
 
-    private void OnMouseDown()
+    public void OnMouseDownAction(PointerEventData eventData)
     {
-        if (EventSystem.current.IsPointerOverGameObject())
+        //if (EventSystem.current.IsPointerOverGameObject())
 
-            return;
+            //return;
 
 
         if (clicked == false)
@@ -40,5 +38,15 @@ public class SceneMenager : MonoBehaviour
     public void LoadLevel()
     {
         SceneManager.LoadScene("MenuGlowne");
+    }
+
+    public void QuitApp()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Debug.Log("You quit the application");
+            Application.Quit();
+        }
+
     }
 }
