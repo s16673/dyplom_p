@@ -458,6 +458,7 @@ MonoBehaviour:
   gridZ: 10
   gridSpacingOffset: 1
   gridOrigin: {x: -13, y: 1, z: -5}
+  serialized: 0
 --- !u!4 &1025988397
 Transform:
   m_ObjectHideFlags: 0
